@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend><h2 style='color:red'>Registration form</h2></legend>
+            <label for="Username:">Username:</label><input id="Username" name="Username" type="text" placeholder="Username" autofocus required>
+            <label for="Password">Password:</label><input type="Password" name="Password" id="password" placeholder="Password">
+            <label for="email">Email: </label><input type="text" name="email" id="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="please enter in an email valid format: example@example.com">
+            <input type="reset" value="clear the form">
+            <hr>
+            <label for="on">On: </label><input type="radio" name="onOff" value="on"> 
+            <label for="off">Off</label><input type="radio" name="onOff" value="off">
+            <br>
+            <label for="twitter">Twitter: </label><input type="checkbox" id="twitter" name="twitter">
+            <label for="facebook">Facebook: </label><input type="checkbox" id="facebook" name="facebook">
+            <select name="countries">
+                <option value="NIG">Nigeria</option>
+                <option value="US">US</option>
+                <option value="UK">United-Kingdom</option>
+            </select>
+            <br>
+            <hr>
+            <input type="tel" name="phone" id="number" placeholder="tel-number" pattern="[0-9]{3} [0-9]{4} [0-9]{4}" title="Enter your number in this format ### #### ####">
+            <input type="date" name="" id="" min="2023-01-01" max="2024-01-01">
+            <input type="number" id="number" name="number" min="0" max="6">
+            <input type="range" id="range" min="1" max="10">
+            <hr>
+            <textarea name="message"></textarea>
+            <hr>
+            <input type="submit" value="click here to submit this form">
+        </fieldset>
+    </form>
+</body>
+</html>
